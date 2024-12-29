@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="nav">
+        <h1>BINUS<span>F&B</span></h1>
+    </div>
+
+    <div class="card">
+        <div class="left">
+            <h1>Canteen App</h1>
+            <h2>Order your favourite food in Binus Canteen</h2>
+            <div class="qltyCont">
+                <img src="Assets/Queue.png" alt="queue">
+                <h3>No queueing</h3>
+            </div>
+            <div class="qltyCont">
+                <img src="Assets/Time.png" alt="queue">
+                <h3>Minimum Waiting</h3>
+            </div>
+            <div class="qltyCont">
+                <img src="Assets/Efficient.png" alt="queue">
+                <h3>Efficient</h3>
+            </div>
+        </div>
+        <div class="right">
+            <form name="MyForm" action="home.html" onsubmit="return validateForm()" method="post">
+                <div class="loginInput">
+                    <h1>Login</h1>
+                </div>
+                <div class="loginInput">
+                    <label for="loginID">NIM</label>
+                    <input type="text" name="loginID" id="loginID" placeholder="NIM..." required pattern = "[0-9]{10}">
+                </div>
+                <div class="loginInput">
+                    <label for="loginPW" id="labelPW">Password</label>
+                    <input type="password" name="loginPW" id="loginPW" placeholder="Password..." required>
+                </div>
+                <div class="loginInput">
+                    <!-- <button type="button" id="loginBtn">Login</button> -->
+                    <input type="submit" value="Submit" class="submitBtn">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Order</title>
+    <link rel="stylesheet" href="orderPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="links">
+            <a href="outlet.html">
+                < Back</a>
+        </div>
+        <div class="nav-header">
+            <img src="Assets/logo.png" alt="logo">
+            <h1>BINUS<span>F&B</span></h1>
+        </div>
+        <div class="links">
+            <div class="account">
+                <img src="Assets/User.png" alt="user">
+                <h2>Heru</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="title">
+                <h1>Order Summary</h1>
+            </div>
+            <div class="order-summary">
+                <div class="template" id="template1">
+                    <div class="amount">
+                        <h2 id="minus" onclick="minus(1)">
+                            -
+                        </h2>
+                        <h1 id="amount">
+                            x<span id="amount1">1</span>
+                        </h1>
+                        <h2 id="plus" onclick="plus(1)">
+                            +
+                        </h2>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span id="price1">12</span>.000,00
+                    </h3>
+                    
+                </div>
+                <div class="template" id="template2">
+                    <div class="amount">
+                        <h2 id="minus" onclick="minus(2)">
+                            -
+                        </h2>
+                        <h1 id="amount">
+                            x<span id="amount2">1</span>
+                        </h1>
+                        <h2 id="plus" onclick="plus(2)">
+                            +
+                        </h2>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span id="price2">10</span>.000,00
+                    </h3>
+                </div>
+                <div class="template" id="template3">
+                    <div class="amount">
+                        <h2 id="minus" onclick="minus(3)">
+                            -
+                        </h2>
+                        <h1 id="amount">
+                            x<span id="amount3">1</span>
+                        </h1>
+                        <h2 id="plus" onclick="plus(3)">
+                            +
+                        </h2>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span id="price3">12</span>.000,00
+                    </h3>
+                </div>
+                <div class="template" id="template4">
+                    <div class="amount">
+                        <h2 id="minus" onclick="minus(4)">
+                            -
+                        </h2>
+                        <h1 id="amount">
+                            x<span id="amount4">1</span>
+                        </h1>
+                        <h2 id="plus" onclick="plus(4)">
+                            +
+                        </h2>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span id="price4">15</span>.000,00
+                    </h3>
+                </div>
+                <div class="template" id="template5">
+                    <div class="amount">
+                        <h2 id="minus" onclick="minus(5)">
+                            -
+                        </h2>
+                        <h1 id="amount">
+                            x<span id="amount5">1</span>
+                        </h1>
+                        <h2 id="plus" onclick="plus(5)">
+                            +
+                        </h2>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span id="price5">7</span>.000,00
+                    </h3>
+                </div>
+            </div>
+            <div class="total">
+                <h1>Total</h1>
+                <h3 id="totalTemplate">Rp. <span id="total">56</span>.000,00</h3>
+            </div>
+            <div class="buttons">
+                <a href="outlet.html" id="cancel">Cancel</a>
+                <a href="OrderSuccess.html" id="pay">Pay</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h1>Payment</h1>
+            </div>
+            <div class="qris">
+                <img src="Assets/QRIS.png" alt="">
+            </div>
+            <div class="dummy">
+                <p>Refreshing in <span id="timer">5</span>s</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="orderPage.js"></script>
+</html>

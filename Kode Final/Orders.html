@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="Orders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-header">
+            <img src="Assets/logo.png" alt="logo">
+            <h1>BINUS<span>F&B</span></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Orders.html" class="current">Orders</a></li>
+            </ul>
+
+            <div class="account">
+                <img src="Assets/User.png" alt="user">
+                <h2>Heru</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="title">
+                <h1>Active Orders</h1>
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle ready"></i>
+                        <p>Ready</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle not-ready"></i>
+                        <p>Not Ready</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle not-ready"></i>
+                        <p>Not Ready</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+        </div>
+        <div class="right">
+            <div class="title">
+                <h1>Transaction History</h1>
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle inactive"></i>
+                        <p>Done</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle inactive"></i>
+                        <p>Done</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+            <div class="template">
+                <div class="templateLeft">
+                    <h3 class="name">Nama Outlet</h3>
+                    <div class="statusBar">
+                        <i class="fa fa-circle inactive"></i>
+                        <p>Done</p>
+                    </div>
+                </div>
+                <div class="templateRight">
+                    <button onclick="showReceipt()">Details</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <div class="receipt">
+
+            <div class="receiptHeader">
+                <div class="title">
+                    <h1>Your Receipt</h1>
+                </div>
+                <div class="topId">
+                    <p>Name : Heru Soedibyo</p>
+                    <p>NIM : 2702270409</p>
+                    <p>Order Time :</p>
+                    <p id="time"></p>
+                </div>
+                <div class="bottomId">
+                    <p class="orderID">Order ID: #398</p>
+                </div>
+            </div>
+            <div class="receiptFill">
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>12</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x5
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>50</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>12</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>15</span>.000,00
+                    </h3>
+                    
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>7</span>.000,00
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="receiptFooter">
+                <div class="total">
+                    <h1>Total</h1>
+                    <h3>Rp. <span>96</span>.000,00</h3>
+                </div>
+                <div class="button">
+                    <button onclick="showReceipt()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Orders.js"></script>
+
+</html>

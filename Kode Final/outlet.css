@@ -1,0 +1,333 @@
+@import url('https://fonts.cdnfonts.com/css/allerta-stencil');
+@import url('https://fonts.cdnfonts.com/css/allerta');
+@import url('https://fonts.cdnfonts.com/css/almarai');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: #a29e9e;
+    margin: 0;
+    padding: 0;
+    /* background-color: #B6B6B6; */
+}
+
+
+.nav {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #4F070D;
+    /* background-color: transparent; */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    /* align-items: center; */
+    /* margin-bottom: 2vh; */
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 2000;
+    /* align-items: center; */
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.nav-header img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Allerta Stencil', sans-serif;
+    width: 100%;
+    font-weight: 200;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.nav span {
+    color: #C59722;
+    font-weight: 200;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav .links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .links a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Almarai';
+    margin-left: 0;
+}
+
+.nav .account {
+    display: flex;
+    border: 3px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    max-height: 60%;
+    background-color: transparent;
+}
+
+.nav .account img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav h2 {
+    color: #FFF;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: 'Allerta';
+}
+
+.banner {
+    background-image: url('Assets/banner.png');
+    /* background-color: #C4C4C4; */
+    height: 40vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    align-items: center;
+    /* padding-top: 10vh; */
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    height: 40vh;
+    width: 100vw;
+    z-index: -1;
+    padding-top: 10vh;
+}
+
+.outlet-info {
+    margin-top: 4vh;
+    position: absolute;
+    width: 40vw;
+    height: 30vh;
+    background-color: #625A5A;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vh;
+}
+
+.fill {
+    width: 70%;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.fill h1 {
+    color: #FFF;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 100;
+    font-size: 44px;
+    margin: 0;
+}
+
+.fill hr {
+    margin: 0;
+}
+
+.fill h3 {
+    color: #FFF;
+    font-family: 'Almarai';
+    font-weight: 100;
+    font-size: 20px;
+    margin: 1vh 0 0 0;
+}
+
+.content {
+    width: 100vw;
+    height: auto;
+    margin: 0 0 15vh 0;
+}
+
+.content .title {
+    margin: 0;
+    width: 100%;
+    background-color: #C4C4C4;
+    padding: 1vh 3vw;
+    border-bottom: 1px solid #000;
+}
+
+.title h1 {
+    margin: 0;
+    font-family: 'Almarai';
+    color: #2e2b2b;
+}
+
+.wrapper {
+    width: 95dvw;
+    margin: auto;
+    padding: 0;
+}
+
+.menu {
+    height: 30dvh;
+    width: 100%;
+    border: 2px solid #787878;
+    background-color: #b7b7b7;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+    font-family: 'Almarai', sans-serif;
+    margin: 3.2vh 0;
+    border-radius: 10px;
+}
+
+.menu h1 {
+    font-family: 'Almarai', sans-serif;
+}
+
+.menu img {
+    border-radius: 15px;
+    height: 25dvh;
+}
+
+.menu .desc {
+    /* margin-left: 5vw; */
+    max-width: 50vw;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.sale-box {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sale-box img {
+    width: 5vw;
+    height: 9vh;
+}
+
+.sale-box h1 {
+    font-size: 52px;
+    border-bottom: 2px solid;
+}
+
+.buyCatalog {
+    position: fixed;
+    background-color: #787878;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+.buyCatalog .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a29e9e;
+    width: 20vw;
+}
+
+.buyCatalog h3 {
+    font-size: 20px;
+    font-family: 'Almarai';
+    margin: 0;
+}
+
+.buyCatalog .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    align-items: center;
+    /* background-color: #6a6a6a; */
+}
+
+#backBtn {
+    font-size: 20px;
+    font-family: 'Almarai';
+    color: #4F070D;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#backBtn:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.buyBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 50%;
+    max-width: 70%;
+    border-radius: 15px;
+    border: 2px solid #4F070D;
+    background-color: #4F070D;
+    padding: 1vw;
+    max-height: 80%;
+    color: #FFF;
+    gap: 2vw;
+    transition:  all 0.5s ease;
+}
+
+.buyBtn:hover {
+    cursor: pointers;
+    background-color: #3d0d11;
+    border: 2px solid #FFF;
+}
+
+.buyBtn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+.buyBtn h3 {
+    color: #000;
+    font-family: 'Almarai';
+    padding: 5px 16px;
+    background-color: #a29e9e;
+    border-radius: 12px;
+    font-size: 16px;
+}

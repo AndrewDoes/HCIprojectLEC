@@ -1,0 +1,568 @@
+@import url('https://fonts.cdnfonts.com/css/allerta-stencil');
+@import url('https://fonts.cdnfonts.com/css/allerta');
+@import url('https://fonts.cdnfonts.com/css/almarai');
+
+*, *::before , *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    margin: 0;
+    padding: 0;
+    /* background-color: #B6B6B6; */
+}
+
+.banner {
+    /* background-image: url('Assets/bg1.jpg'); */
+    background-color: #C4C4C4;
+    max-height: 400vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    top: 0;
+    left: 0;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.2);
+    max-height: 400vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.nav {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #4F070D;
+    /* background-color: transparent; */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 2vw;
+    z-index: 2000;
+    /* align-items: center; */
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Allerta Stencil', sans-serif;
+    width: 100%;
+    font-weight: 200;
+    margin-left: 20px;
+}
+
+.nav span {
+    color: #C59722;
+    font-weight: 200;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav .links {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    margin-left: 7vw;
+}
+
+.nav li .current {
+    text-decoration: underline;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Allerta';
+    color: #FFF;
+    font-size: 20px;
+}
+
+.nav .account {
+    display: flex;
+    border: 3px solid #FFF;
+    border-radius: 20px;
+    margin-left: 5vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    max-height: 50%;
+    background-color: transparent;
+}
+
+.nav .account img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav h2 {
+    color: #FFF;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Allerta';
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left {
+    /* position: relative; */
+    z-index: 0;
+    position: fixed;
+    width: 22.5%;
+    text-align: center;
+    font-family: 'Allerta';
+    display: grid;
+    padding-right: 10px;
+}
+
+.left-sidenav {
+    background-color: #5A5C5E;
+    font-family: 'Allerta';
+    margin-left: 1.5vw;
+    padding-top: 2vh;
+    padding-left: 0;
+    padding-bottom: 2vh;
+    border-radius: 20px;
+}
+
+
+.left-sidenav h1 {
+    color: #FFF;
+    font-size: 2.5vw;
+}
+
+.left-sidenav span {
+    color: #C59722;
+}
+
+.left-sidenav hr {
+    border-color: #4F070D;
+    border: 5px solid #4F070D;
+    margin-bottom: 5vh;
+}
+
+.left-sidenav .navigation-helper li {
+    margin-bottom: 5vh;
+    text-align: left;
+    list-style-type: none;
+    border-bottom: 2px solid #FFF;
+    margin-right: 5vw;
+    margin-left: 2vw;
+}
+
+.left-sidenav .navigation-helper a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: 'Allerta';
+    color: white;
+}
+
+.promo-carousel {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin-top: 2vh;
+    margin-left: 1.5vw;
+    background-color: #5A5C5E;
+    height: 25vh;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    /* border: 2px solid #5A5C5E; */
+}
+
+.promo-carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indicator{
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #5A5C5E;
+    margin: 0 0 0 1.5vw;
+    /* position: absolute; */
+    align-items: center;
+    z-index: 1;
+    padding: 10px 0 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.pics{
+    width: 100%;
+    position: absolute;
+}
+
+#pic1{
+    opacity: 1;
+}
+
+#pic2{
+    opacity: 0;
+}
+
+#pic3{
+    opacity: 0;
+}
+
+.dots{
+    height: 12px;
+    opacity: 0.6;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #c8c8c8;
+}
+
+#dot1{
+    background-color: #000;
+}
+
+.carousel-indicator.active{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.carousel-indicator{
+    background-color: rgb(0, 0, 0, 0.2);
+    height : 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 0px;
+    margin-left: 12px;
+}
+
+
+.right{
+    /* margin-left: 24%; */
+    width: 75%;
+    /* max-height: 50%; */
+    font-family: 'Allerta';
+    margin-top: 0;
+    margin-left: 24%;
+    align-items: center;
+    /* right: 0; */
+    /* background-color: #5A5C5E; */
+}
+
+.right .template.food .title h1{
+    color: #FFF;
+    width: 100%;
+    margin-top: 0;
+    background-color: #4E1F23;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2vw;
+    margin-bottom: 0;
+}
+
+.right .template{
+    margin-bottom: 2vh;
+}
+
+.right .template .menu{
+    height: 75%;
+    width: 100%;
+    /* background-color: #C59722; */
+}
+
+.right .template .menu .row{
+    margin-top: 0;
+    display: flex;
+    height: 210px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.template.food .row .card{
+    width: 30%;
+    height: 100%;
+    background-image: url('Assets/steak.jpg');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.template.food .row .card:hover{
+    cursor: pointer;
+}
+
+/* .template.food .row .card:hover > .desc{
+    height: 70px;
+    /* opacity: 1;
+} */
+
+.template.food .row .card::before{
+    position: absolute;
+    content: '';
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 22.5%;
+    height: 25vh;
+    z-index: -1
+}
+
+
+.template.food .row .card .desc{
+    margin-top: 140px;
+    padding: 0 10px;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    /* opacity: 0; */
+    background-color: #4E1F23;
+    z-index: 1;
+    /* transition: all 0.2s linear; */
+}
+
+.desc h2{
+    color: #F4F4F4;
+    font-weight: 200;
+    font-size: 1.5vw;
+    margin: 0.75vh 0 0 0;
+}
+
+.left-desc h3{
+    color: #F4F4F4;
+    font-weight: 100;
+    font-size: 1vw;
+    font-family: sans-serif;
+    margin: 1vh 0 0 0;
+}
+
+.right-desc h3{
+    color: #F4F4F4;
+    font-weight: 100;
+    font-size: 1vw;
+    font-family: sans-serif;
+    margin: 6vh 0 0 0;
+}
+
+.right .template.beverage .title h1{
+    color: #FFF;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #685353;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2vw;
+    margin-bottom: 0;
+}
+
+.template.beverage .row .card{
+    width: 30%;
+    height: 100%;
+    background-image: url('Assets/drink.jpg');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.template.beverage .row .card:hover{
+    cursor: pointer;
+}
+
+.template.beverage .row .card::before{
+    position: absolute;
+    content: '';
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 22.5%;
+    height: 25vh;
+    z-index: -1
+}
+
+
+.template.beverage .row .card .desc{
+    margin-top: 140px;
+    padding: 0 10px;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #6d4f51;
+    z-index: 1;
+}
+
+.right .template.snack .title h1{
+    color: #FFF;
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #A1794C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2vw;
+    margin-bottom: 0;
+}
+
+.template.snack .row .card{
+    width: 30%;
+    height: 100%;
+    background-image: url('Assets/snack.jpg');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 0;
+}
+
+.template.snack .row .card:hover{
+    cursor: pointer;
+}
+
+.template.snack .row .card::before{
+    position: absolute;
+    content: '';
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 22.5%;
+    height: 25vh;
+    z-index: -1
+}
+
+
+.template.snack .row .card .desc{
+    margin-top: 140px;
+    padding: 0 10px;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #A1794C;
+    z-index: 1;
+}
+
+.footer{
+    bottom : 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-color: #4F070D;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5%;
+    /* z-index: 2000; */
+}
+
+.brand-repetition{
+    text-align: center;
+    max-width: 20%;
+    align-items: center;
+}
+
+.brand-repetition img{
+    height : 140px;
+    width: 140px;
+    margin: auto;
+}
+
+.brand-repetition h1{
+    color: #FFF;
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Allerta';
+}
+
+.contact-us{
+    margin: 0 5%;
+    padding: 0 3%;
+    border-left: 2px solid #FFF;
+    width: 30%;
+    align-items: center;
+    height: 80%;
+}
+
+.footer h2{
+    margin: 0 0 0 0;
+    color: #FFF;
+    font-family: 'Allerta';
+}
+
+.contact-list{
+    display: flex;
+    margin-top: 4vh;
+    align-items: center;
+}
+
+.contact-list img{
+    height: 60px;
+    width: 60px;
+}
+
+.footer h3{
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.location{
+    width: 30%;
+    border-left: 2px solid #FFF;
+    height: 80%;
+    margin : 0 5%;
+    padding: 1vh 5% 0 5%;
+}
+
+.location-fill{
+    margin-top: 5vh;
+}

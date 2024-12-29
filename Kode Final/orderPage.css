@@ -1,0 +1,260 @@
+@import url('https://fonts.cdnfonts.com/css/allerta-stencil');
+@import url('https://fonts.cdnfonts.com/css/allerta');
+@import url('https://fonts.cdnfonts.com/css/almarai');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: #a29e9e;
+    margin: 0;
+    padding: 0;
+    /* background-color: #B6B6B6; */
+}
+
+
+.nav {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #4F070D;
+    /* background-color: transparent; */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    /* align-items: center; */
+    /* margin-bottom: 2vh; */
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 2000;
+    /* align-items: center; */
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.nav-header img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Allerta Stencil', sans-serif;
+    width: 100%;
+    font-weight: 200;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.nav span {
+    color: #C59722;
+    font-weight: 200;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.nav .links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav .links a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Almarai';
+    margin-left: 0;
+}
+
+.nav .account {
+    display: flex;
+    border: 3px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    max-height: 60%;
+    background-color: transparent;
+}
+
+.nav .account img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav h2 {
+    color: #FFF;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 100;
+    font-family: 'Allerta';
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.content .left {
+    margin-top: 5vh;
+    padding: 0vh 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    max-height: 80%;
+    background-color: #eaeaea;
+}
+
+.title{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.title h1 {
+    font-family: 'Almarai';
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.content .left .order-summary{
+    width: 100%;
+    padding: 0 2vw;
+    font-family: 'Almarai';
+}
+
+.content .left .order-summary .template{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.template .amount{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.template .amount h1{
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.template .amount h2{
+    border: 1px solid #000;
+    /* padding: 5px; */
+    height: 2vw;
+    width: 2vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    border-radius: 30%;
+}
+
+#minus{
+    background-color: #8b8b8bb2;
+}
+
+#plus{
+    background-color: rgba(0, 128, 0, 0.496);
+}
+
+.left .total{
+    display: flex;
+    width: 100%;
+    padding: 0 2vw;
+    font-family: 'Almarai';
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #000;
+}
+
+.left .total h1{
+    font-size: 24px;
+}
+
+.left .total h3{
+    font-size: 20px;
+}
+
+.left .buttons{
+    display: flex;
+    width: 100%;
+    padding: 2vh 10vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left .buttons a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-family: 'Allerta';
+}
+
+.left .buttons #cancel{
+    background-color: #8e151f;
+}
+
+.buttons #cancel:hover{
+    background-color: #4F070D;
+}
+
+.left .buttons #pay{
+    padding: 10px 30px;
+    background-color: green;
+}
+
+.buttons #pay:hover{
+    background-color: rgb(11, 59, 11);
+}
+
+.content .right {
+    margin-top: 5vh;
+    padding: 0vh 2vw;
+    width: 40%;
+    height: 80%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .right .qris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .right img{
+    width: 80%;
+    object-fit: cover;
+    object-position: center center;
+}

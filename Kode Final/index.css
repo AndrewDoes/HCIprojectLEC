@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/allerta-stencil');
+@import url('https://fonts.cdnfonts.com/css/allerta');
+
+body{
+    width: 100%;
+    background-color: #989191;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* background-color: #B6B6B6; */
+}
+
+.banner{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    background-image: url('Binus-University.jpeg');
+    padding-top: 2vh;
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.nav{
+    top: 0;
+    left: 0;
+    background-color: #4F070D;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.nav h1{
+    margin: 0;
+    color: #FFF;
+    padding: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+    width: 100%;
+    /* border-bottom: 3px #FFF solid; */
+    font-weight: 100;
+}
+
+.nav span{
+    color: #C59722;
+    font-weight: 800;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.card{
+    margin: auto;
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+}
+
+.card .left{
+   width: 40vw;
+   background-color: #D1CCCC;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   text-align: center;
+}
+
+.card .left h1{
+    font-family: 'Allerta Stencil', sans-serif;
+    text-decoration: underline;
+    color: #3C3131;
+    font-size: 40px;
+}
+
+.card .left h2{
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Allerta', sans-serif;
+    margin-left: 7vw;
+    max-width: 70%;
+    color:#3C3131;
+    margin-top: 5vh;
+}
+
+.qltyCont{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 7vw;
+    align-items: center;
+    max-width: 70%;
+}
+
+.qltyCont img{
+    width: 50px;
+    height: 50px;
+}
+
+.qltyCont h3{
+    font-family: 'Allerta', sans-serif;
+    color: #3C3131;
+    font-size: 32px;
+    line-height: 10px;
+    margin-left: 4vw;
+}
+
+
+.card .right{
+    width: 30vw;
+    height: 80vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url('Assets/bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.right::before{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    right: 15vw;
+    width: 30vw;
+    height: 80vh;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.loginInput h1{
+    font-family: 'Allerta', sans-serif;
+    margin-top: 10vh;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
+    color: #FFF;
+    z-index: 1;
+}
+
+.loginInput{
+    display: grid;
+    max-width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+.loginInput input{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.loginInput label{
+    font-family: 'Allerta', sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    color: #FFF;
+}
+
+.loginInput p{
+    font-size: 20px;
+    z-index: 1;
+    color: #FFF;
+}
+
+.loginInput a{
+    color: rgb(5, 5, 169);
+}
+
+.submitBtn{
+    background-color: #B6B6B6;
+    margin: auto;
+    max-width: 60%;
+    border: 0px;
+    margin-top: 5vh;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    border-radius: 10px;
+    font-family: "Allerta", sans-serif;
+    font-size: 20px;
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.submitBtn:hover{
+    font-size: 22px;
+    background-color: #888888;
+    color: #FFF;
+    cursor:pointer;
+}

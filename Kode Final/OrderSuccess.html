@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success!</title>
+    <link rel="stylesheet" href="OrderSuccess.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-header">
+            <img src="Assets/logo.png" alt="logo">
+            <h1>BINUS<span>F&B</span></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Orders.html">Orders</a></li>
+            </ul>
+
+            <div class="account">
+                <img src="Assets/User.png" alt="user">
+                <h2>Heru</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <h1>Order Success</h1>
+            <h3>Thank you for ordering on BINUSF&B Website!</h3>
+
+            <div class="ratings">
+                <h3>Please Rate Our Services</h3>
+                <div class="stars">
+                    <span class="fa fa-star" id="star1" onclick="check(1)" onmouseover="checkHover(1)"
+                        onmouseleave="uncheckHover(1)"></span>
+                    <span class="fa fa-star" id="star2" onclick="check(2)" onmouseover="checkHover(2)"
+                        onmouseleave="uncheckHover(2)"></span>
+                    <span class="fa fa-star" id="star3" onclick="check(3)" onmouseover="checkHover(3)"
+                        onmouseleave="uncheckHover(3)"></span>
+                    <span class="fa fa-star" id="star4" onclick="check(4)" onmouseover="checkHover(4)"
+                        onmouseleave="uncheckHover(4)"></span>
+                    <span class="fa fa-star" id="star5" onclick="check(5)" onmouseover="checkHover(5)"
+                        onmouseleave="uncheckHover(5)"></span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="orders.html">Check Your Orders Here</a>
+                <a href="home.html">Go Back To Main Page</a>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="receiptHeader">
+                <div class="title">
+                    <h1>Your Receipt</h1>
+                </div>
+                <div class="topId">
+                    <p>Name : Heru Soedibyo</p>
+                    <p>NIM : 2702270409</p>
+                    <p>Order Time :</p>
+                    <p id="time"></p>
+                </div>
+                <div class="bottomId">
+                    <p class="orderID">Order ID: #398</p>
+                </div>
+            </div>
+            <div class="receiptFill">
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>12</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>10</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>12</span>.000,00
+                    </h3>
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>15</span>.000,00
+                    </h3>
+                    
+                </div>
+                <div class="template">
+                    <div class="amount">
+                        <h1 id="amount">
+                            x1
+                        </h1>
+                    </div>
+                    <h3 id="name">
+                        Nama Produk
+                    </h3>
+                    <h3 id="price">
+                        Rp. <span>7</span>.000,00
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="receiptFooter">
+                <div class="total">
+                    <h1>Total</h1>
+                    <h3>Rp. <span>56</span>.000,00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="orderSuccess.js"></script>
+
+</html>
